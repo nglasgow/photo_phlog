@@ -1,0 +1,13 @@
+<h1>Phlog Gallery</h1>
+
+<div id="phlogs">
+  <%= render @phlogs %>
+</div>
+<div class="clear"></div>
+
+<%= direct_upload_form_for @uploader do |f| %>
+  <p><%= f.file_field :picture %></p>
+  <p><%= f.submit "Upload Picture" %></p>
+<% end %>
+
+

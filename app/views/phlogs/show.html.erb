@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @phlog.name %>
+</p>
+
+<p>
+  <b>Picture:</b>
+  <%= image_tag @phlog.picture_url(:thumb).to_s %>
+</p>
+
+
+<%= link_to 'Edit', edit_phlog_path(@phlog) %> |
+<%= link_to "Destroy", @phlog, :confirm => 'Are you sure?', :method => :delete %> |
+<%= link_to 'Back', phlogs_path %>

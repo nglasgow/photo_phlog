@@ -1,0 +1,10 @@
+<h1>Galleries</h1>
+
+<% for gallery in @galleries %>
+  <div class="gallery">
+    <h2><%= link_to gallery.name, gallery %></h2>
+    Phlogs: <%= gallery.phlogs.size %>
+  </div>
+<% end %>
+
+<p><%= link_to "New Gallery", new_gallery_path %></p>
