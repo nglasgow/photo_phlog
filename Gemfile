@@ -7,6 +7,7 @@ gem 'fog'
 gem 'carrierwave_direct'
 gem 'sidekiq'
 gem 'binding_of_caller'
+gem 'sinatra'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

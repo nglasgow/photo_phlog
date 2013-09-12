@@ -1,6 +1,6 @@
 class Phlog < ActiveRecord::Base
-  attr_accessible :gallery_id, :name, :picture, :remote_picture_url
-  #belongs_to :gallery
+  attr_accessible :name, :picture, :remote_picture_url
+  # :gallery_id, belongs_to :gallery
 
   mount_uploader :picture, PictureUploader
 
